@@ -11,7 +11,6 @@
     display: flex;
     width: 100%;
     height: auto;
-    max-width: 100%;
     max-height: 100%;
     border-radius: 10px ;
 }
@@ -66,6 +65,7 @@
         align-items: center;
         width: 75%;
         height: auto;
+        margin:2vh;
     }
 
 }

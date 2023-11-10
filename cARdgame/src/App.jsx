@@ -2,7 +2,7 @@ import React from 'react';
 import { Header } from './header-simple/header.jsx';
 import { AboutMeSection } from './aboutMe-section/aboutMeSection';
 import { ProcessSection } from './process-section/processSection.jsx';
-import { GridCatalogo } from './grid-section/gridSection.jsx';
+import { WrapCatalogo } from './wrap-section/wrapSection.jsx';
 import { FooterSection } from './footer-section/footerSection.jsx';
 import './App.css'
 
@@ -27,25 +27,24 @@ export function App() {
 
   const titlepr1='Prototipo 1';
   const idpr1='Prototipo1';
-  const pr1Img=[['tablero_greenBar-prototipo1.png','pr1f1'],
-  ['tablero_redBar-prototipo1.png','pr1f2'],
-  ['tablero_3D-prototipo1.png','pr1f3'],
-  ['model3D-prototipo1.png','pr1f4']
+  const pr1Img=['tablero_greenBar-prototipo1.png',
+  'tablero_redBar-prototipo1.png',
+  'tablero_3D-prototipo1.png',
+  'model3D-prototipo1.png'
   ];
 
   const titlepr2='Prototipo 2';
   const idpr2='Prototipo2';
   const pr2Img=[
-  ['jedi_base-prototipo2.png','pr2f1'],
-  ['jedi_ataque-prototipo2.png','pr2f2'],
-  ['jedi_bloqueo-prototipo2.png','pr2f3'],
-  ['steve_base-prototipo2.png','pr2f4'],
-  ['steve_ataque-prototipo2.png','pr2f5'],
-  ['steve_bloqueo-prototipo2.png','pr2f6'],
-  ['funcionamiento1-prototipo2.png','pr2f7'],
-  ['funcionamiento2-prototipo2.png','pr2f8'],
-  ['funcionamiento3-prototipo2.png','pr2f9'],
-  ['funcionamiento4-prototipo2.png','pr2f10']
+  'jedi_base-prototipo2.png',
+  'jedi_ataque-prototipo2.png',
+  'jedi_bloqueo-prototipo2.png',
+  'steve_base-prototipo2.png',
+  'steve_ataque-prototipo2.png',
+  'steve_bloqueo-prototipo2.png',
+  'funcionamiento1-prototipo2.png',
+  'funcionamiento2-prototipo2.png',
+  'funcionamiento3-prototipo2.png'
   ];
 
   const footerLinks=[
@@ -58,8 +57,8 @@ export function App() {
     <Header name={name} />
     <AboutMeSection title={titleIntro} texts={textIntro} img={imgIntro}/>
     <ProcessSection title={titleOrganization} Cards={OrganizationCards}/>
-    <GridCatalogo title={titlepr1} imagenes={pr1Img} id={idpr1}/>
-    <GridCatalogo title={titlepr2} imagenes={pr2Img} id={idpr2}/>
+    <WrapCatalogo title={titlepr1} imagenes={pr1Img} id={idpr1}/>
+    <WrapCatalogo title={titlepr2} imagenes={pr2Img} id={idpr2}/>
   </section>
   <section className='flexbox-blue'>
     <FooterSection links={footerLinks}/>
